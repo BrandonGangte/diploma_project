@@ -1,0 +1,51 @@
+{
+    "Top Stories": {
+        "BBC News":"bbc-news",
+        "Associated Press": "associated-press",
+        "CNN": "cnn",
+        "The Times of India": "the-times-of-india",
+        "The New York Times": "the-new-york-times",
+        "Al Jazeera English": "al-jazeera-english"
+    },
+    "World":{
+        "BBC News":"bbc-news",
+        "BBC Sport": "bbc-sport",
+        "ESPN": "espn",
+        "Associated Press": "associated-press",
+        "The New York Times": "the-new-york-times",
+        "Google News": "google-news"
+    },
+    "Politics":{
+        "Breitbart News": "breitbart-news",
+        "CNBC":"cnbc"
+    },
+    "Business":{
+        "Bloomberg":"bloomberg",
+        "Financial Times":"financial-times",
+        "The Economist":"the-economist",
+        "Fortune":"fortune"
+    },
+    "Sports":{
+        "BBC Sport": "bbc-sport",
+        "ESPN": "espn",
+        "NFL News":"nfl-news",
+        "TalkSport":"talksport"
+    },
+    "Entertainment":{
+        "Daily Mail":"daily-mail",
+        "Mashable": "mashable",
+        "MTV News": "mtv-news",
+        "Buzzfeed": "buzzfeed",
+        "IGN":"ign"
+    },
+    "Technology":{
+        "Engadget":"engadget",
+        "Hacker News":"hacker-news",
+        "Recode":"recode",
+        "TechRadar": "techradar",
+        "The Verge":"the-verge"
+    },
+    "Health":{
+        "New Scientist":"new-scientist"
+    }
+}
