@@ -1,0 +1,126 @@
+/* header css for setting page */
+
+#colorful-nav {
+    padding-bottom: 0px;
+    border: 1px transparent; 
+    height: 5pc;
+    background-color: #272727;
+    
+}
+
+#colorful-nav .navbar-nav {
+    float:none;
+    height: 93px;
+}
+
+#colorful-nav .navbar-collapse {
+    border-top: 0; 
+}
+
+#colorful-nav li{
+    margin-top: -12.8px !important;    
+}
+
+.nav h5{
+    margin-top: -1px;
+}
+
+#colorful-nav ul>li {
+    float:left;
+    text-align: center;
+    width: 12.2%;
+    margin:0;
+    margin-left: 0 !important;
+    height: 12%;
+    padding-bottom: 13px;
+    transition: 0.2s padding-top;
+}
+
+#colorful-nav ul>li:hover {
+    padding-top: 14px;
+}
+
+#colorful-nav .icon-bar {
+    background-color: black;
+}
+
+#colorful-nav .navbar-toggle {
+    float: left;
+    border-color: black;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#colorful-nav h5{
+    color:white;
+}
+
+
+/*  Nav -------------- */
+
+
+#colorful-nav ul>li:hover {
+    padding-top: 0;
+}
+
+#colorful-nav h2{
+    margin-top: 0.5pc;
+}
+
+#colorful-nav a{
+    width:8pc;
+    margin-top: -0.3pc;
+}
+
+#colorful-nav h5{
+    padding: 9px;
+}
+
+
+#colorful-nav h5:hover{
+    background-color: #b70000;
+     transition: all 0.2s linear;
+}
+
+#colorful-nav ul>li {
+    float:left;
+    text-align: center;
+    width: 8%;
+    
+}
+
+
+/* nav end ------- */
+
+
+
+
+
+/*  On smaller Screen */
+
+@media screen and (max-width: 1200px)
+{
+    #colorful-nav h2{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+     .nav h5{
+        font-size: 11px !important;
+        margin-top: -0.7pc !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    #colorful-nav ul>li {
+        text-align: left;
+        height:60px;
+        width: 100%;
+    }
+  
+
+    #colorful-nav ul>li:hover{
+        padding: 2px;
+    }
+}

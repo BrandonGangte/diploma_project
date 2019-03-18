@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Front</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/version-head.css">
+		<link rel="shortcut icon" href="../assets/images/icon1.png">
+		<link rel="stylesheet" type="text/css" href="../assets/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+		<link rel="stylesheet" href="../assets/css/index4.css">
+		<link rel="stylesheet" href="../assets/css/version1.0.css">
+        <link rel="stylesheet" href="../assets/css/additional.css">
+        
+    
+        <!-- Imports -->
+        <link rel="import" href="./fragments/header-nav.html">
+        <link rel="import" href="./fragments/left-side-nav.html">
+        <link rel="import" href="./fragments/footer.html">
+    </head>
+    <body class="normal">
+        <!-- Header goes here -->
+        <div id="app-header">
+        </div>
+        <div id="body">
+            <!-- side navigation bar goes here -->
+            <div id="left-side-nav">
+            </div>
+
+            <!-- application content goes here -->
+            <div id="app-content">
+                <!-- load spinner --
+                <div id="overlay" style="display: none;">
+                    <div class="spinner"></div> 
+                </div> -->
+                <div id="loading" class="row" style="display: none;">
+                    <img src="../assets/images/gears.gif"/>
+                </div>
+                <div id="connection" style="display: none;">
+                    <div class="confail">
+                        <span id="connected" class="glyphicon glyphicon-cloud"></span>
+                        <span id="flash" class="glyphicon glyphicon-flash"></span>
+                        <h4>There is no internet connection</h4>
+                        <button type="button" id="noConnectionBtn" class="btn btn-lg btn-danger glyphicon glyphicon-refresh">
+                            Try reconnceting
+                        </button>
+                    </div> 
+                </div>
+                <!-- News List -->
+                <ul class="grid effect-6 Visit normal" id="newsList" style="display: none;">
+                    <!--Dummy Article -->
+                    <li class="col-3">
+                        <a class="read">
+                            <span class="readlater glyphicon glyphicon-bookmark"></span>
+                        </a>
+                        <a class="url" href="http://www.abc.net.au/news/2017-05-19/swedish-prosecutors-end-investigation-into-assange-allegations/8542998">
+                            <div class="image">
+                                <img href="http://www.abc.net.au/news/image/1965096-1x1-700x700.jpg">
+                                <h2></h2>
+                                
+                                <span class="description"></span>
+                                <span class="time glyphicon glyphicon-time"></span>
+                            </div>
+                         
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Saved news list -->
+                <ul class="grid effect-6 Visit normal" id="savedNewsList" style="display: none;">
+                </ul>
+
+                <!-- Settings Body -->
+                <ul class="grid effect-6 Visit normal" id="settingsBody" style="display: none;">
+			        <h3 id="no" class="nigh">Options</h3><hr>
+                    <br>
+			        <div id="span1" >
+                        <span id="not" class="night">
+                            Night Mode
+                        </span>
+			            <label class="switch" id="dark">
+                            <input type="checkbox" id="colorMode">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                    <br>
+                    <div id="span2">
+                        <span id="not2" class="night2">
+                            Sort by
+                        </span>
+			            <select id="sortOpt">
+                            <option value="top">Top Stories</option>
+                            <option value="latest">Latest</option>
+                        </select>
+                        <button id="sortSelect">Save</button>
+                     </div>
+                     <br>
+                     <br>
+                     <h3 id="no" class="nigh2">Themes</h3><hr>
+                     <br>
+                     <div id="Themes">
+                         <select id="themesOpt">
+                            <option class="themeChoice" selected="false"value="blue">Blue</option>
+                            <option class="themeChoice" selected="false" value="red">Red</option>
+                        </select>
+                        <button id="themeSelect">Save</button>
+                     </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer goes here -->
+        <div id="app-footer">
+        </div>
+
+        <!-- Javascript -->
+        <script>
+            const {ipcRenderer} = require('electron');
+            const {remote} = require('electron');
+            const appDataFromFs = require('../../src/scripts/appData').appData;
+            window.$ = window.jQuery = require('jquery');
+
+            // An object containing all the data used while the app
+            // is running.
+            // list of data objects are:
+            // 1. categories with all new sources.
+            // 2. Dom Objects used to build elements.
+            // 3. all articles in the present category.
+            window.AppData = { 
+                colorMode: { normal: 'normal', night: 'night'},
+                appThemes: {
+                    red: { light: 'redLight', dark: 'redDark'},
+                    blue: { light: 'blueLight', dark: 'blueDark'}
+                },
+                appSettings: {
+                    currentColorMode: 'normal',
+                    currentAppTheme: 'blue',
+                }
+            };
+
+            window.exposed = {};
+
+            // function for exposing functions in different
+            // files for use in different modules.
+            // The argument fCallback is a function which takes
+            // no arguments. The window object is passed as this.
+            window.exposeFunctionsFromFile = (sName, oObject) => {
+                //if (typeof fCallback !== 'function') {
+                //    throw new Error("ArgumentError: expected a function");
+                //}
+                //fCallback.call(window);
+                window.exposed[sName] = oObject;
+            };
+        </script>
+        <script src="../assets/js/tether.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/modernizr.custom.js"></script>
+        <script src="../renderers/index.js"></script>
+        <script src="../renderers/webContents.js"></script>
+        <script src="../renderers/domEvents.js"></script>
+    </body> 
+</html>

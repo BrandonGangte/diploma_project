@@ -1,0 +1,165 @@
+
+/* CSS for nav bar on top for version 1.0 html page and setting html page */
+
+
+#colorful-nav {
+    padding-bottom: 0px;
+    height: 5pc;
+    border: 1px transparent;    
+}
+
+
+#colorful-nav .navbar {
+    margin-bottom: 0px;
+}
+
+#colorful-nav {
+    background-color: #272727;
+    
+}
+
+#colorful-nav .navbar-nav {
+    float:none;
+    height: 93px;
+}
+
+#colorful-nav .navbar-collapse {
+    border-top: 0; 
+}
+
+#colorful-nav li{
+    margin-top: -12.8px !important;    
+}
+
+
+#myNavbar{
+    margin-left: 2pc;
+}
+
+.nigh {
+    color: #777777;
+    font-size: 1.6pc;
+}
+.nigh2 {
+    color: #777777;
+    font-size: 1.6pc;
+}
+
+
+
+#settingsHeader h2{
+     color: aliceblue;
+    margin-left: 0.7pc;
+    margin-top: -2.7pc;
+    
+} 
+
+#settingsHeader span{
+      margin-left: -9pc;
+    margin-top: 0.6pc;
+}
+
+#readItLaterHeader h2{
+    color: aliceblue;
+    margin-left: 2pc;
+    margin-top: -3pc;
+}
+
+#readItLaterHeader span{
+    margin-left: -9pc;
+    margin-top: 0.6pc;
+    
+}
+
+#colorful-nav ul>li {
+    float:left;
+    text-align: center;
+    width: 12.2%;
+    margin:0;
+    margin-left: 0 !important;
+    height: 12%;
+    padding-bottom: 13px;
+    transition: 0.2s padding-top;
+}
+
+#colorful-nav ul>li:hover {
+    padding-top: 9px;
+}
+
+#colorful-nav .navbar-nav>a {
+    padding-top: 25px;
+    color: white;
+}
+
+#colorful-nav ul>a:hover,
+#colorful-nav ul>a:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#colorful-nav .glyphicon {
+    font-size: 30px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+    color: #00bab3;
+}
+
+#colorful-nav .icon-bar {
+    background-color: black;
+}
+
+#colorful-nav .navbar-toggle {
+    float: left;
+    border-color: black;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#colorful-nav .navbar-brand {
+    height: 100px;
+}
+
+#colorful-nav h5{
+    font-size: 12.6px;
+    color:white;
+}
+
+#colorful-nav .blueLight {
+   /* background-color: #b70000; */
+    background-image: url(../images/blurred-background-211.jpg);
+}
+
+#colorful-nav .blueDark {
+   /* background-color: #861313; */
+    background-image: url(../images/blur_bg1.jpg);
+}
+
+#colorful-nav .redLight {
+    background-color: #b70000;  
+}
+
+#colorful-nav .redDark {
+    background-color: #7c0000;
+}
+
+@media screen and (max-width: 1200px)
+{
+     #colorful-nav h5{
+       font-size: 8.5px;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    #colorful-nav ul>li {
+        text-align: center;
+        height:100px;
+        width: 100%;
+    }
+  
+
+    #colorful-nav ul>li:hover{
+        padding: 5px;
+    }
+}

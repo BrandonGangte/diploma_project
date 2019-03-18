@@ -1,0 +1,97 @@
+/*  customize css for Version 1.0 html and setting html page */
+body.normal{
+    background-color: #cccccc;
+}
+
+body.night{
+    background-color: #141414;
+}
+
+.grid li {
+    opacity: 2;
+    padding: 10px !important;
+    margin-left: 5px!important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    margin-right: 5px !important;
+}
+.grid li:hover {
+    border-style: groove;
+    padding: 7px !important;
+}
+.grid.normal li{
+    background-color: #ffffff;
+}
+
+.grid.night li{
+    background-color: #363636;
+}
+
+.grid.normal li h2{
+    color: #454545;
+}
+
+.grid.night li h2{
+    color: #d0d0d0;
+}
+
+.grid.normal li h2:hover{
+    color: black;
+}
+
+.grid.night li h2:hover{
+    color: white;
+}
+
+.grid.normal li span{
+    color: #4b4b4b !important;
+}
+
+.grid.night li span{
+    color: #d0d0d0 !important;
+}
+.grid.night li h5{
+    color: #c4c4c4;
+}
+.grid.normal li:hover{
+    outline-color: black;
+}
+
+.grid.normal li span{
+    color: #909090;
+}
+
+
+#themesOpt {
+    margin-top: -2pc;
+    border-radius: 4px;
+    width: 10%;
+}
+
+#themeSelect{
+    margin-left: 9px;
+}
+
+#span2 select{
+    width: 10%;
+    margin-left: 9px;
+    border-radius: 4px;
+}
+
+#span1 span{
+    font-size: 1.2pc;
+}
+#span2 span{
+    font-size: 1.2pc;
+}
+
+.normal{
+    margin-top: -5pc;
+}
+.night{
+    margin-top: -5pc;
+}
+
+#time{
+    font-size: 12px;
+}

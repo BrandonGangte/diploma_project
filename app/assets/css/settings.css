@@ -1,0 +1,366 @@
+/* Customize css of setting html page */
+
+/* night mode */
+
+body{
+    background: #333;
+    color: aliceblue;
+    transition: all 0.3s linear;
+}
+body.change{
+    background-color: #cccccc;
+   transition: all 0.3s linear;
+}
+
+#no.nigh{
+    color: #212121;
+}
+#not.night{
+    color: #454545;
+}
+
+#not1.night1{
+    color: #454545;
+}
+
+#not2.night2{
+    color: #454545;
+}
+
+/* night mode */
+
+/*  Search button handled */
+#search{
+    margin-left: 3px;
+    width: 8.7pc;
+    background: #7c0000;
+    border-color: rgba(92, 55, 55, 0.2);
+    color: aliceblue;
+}
+#Sech{
+    display: none;
+    padding: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 2.6pc !important;
+    width: 0;
+}
+#Search{
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    padding-right: 15px;
+    margin-top: -2pc;
+}
+/* ends here */
+
+
+
+#sidebar{
+   margin-top: -6pc;
+    padding-top: 2pc;
+    background-color: #272727;
+    width: 190px;
+    display: block;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    transition:left 0.3s linear;
+    background-color: #7c0000;
+}
+
+#sidebar li{
+    list-style: none !important;
+    padding-left: 10px; 
+     background: #861313;
+}
+
+
+#sidebar .settings{
+    margin-top: 6pc;
+}
+
+#sidebar.visible{
+    left: -130px;
+     transition:left 0.3s linear;
+}
+
+.grid{
+   max-width: 100em !important;
+    margin-left: 13.5pc;
+    margin-top: 7.5pc !important;
+    left: -10px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.grid h3{
+    font-family: 'Raleway',sans-serif !important;
+    color: #e6e6e6;
+    font-size: 29px;
+    padding-bottom: 9px;
+    border-bottom-style: groove;
+    border-bottom-color: black 434 ; 
+}
+
+.grid #span1{
+    margin-left: 1pc;
+    color: #dedede;
+    width: 9pc;
+    font-size: 19px;
+}
+
+.grid #span2{
+    margin-left: 1pc;
+    color: #000000;
+    font-size: 19px;
+}
+
+#not2{
+    color: #c9c8c8;
+}
+
+#opt{
+    font-size: 16px;
+    height: 1.6pc;
+     margin-left: 1pc;
+    border-radius: 8px;
+}
+
+#grid.Visit{
+    transition: all 0.3s linear;
+    margin-left: 5.4pc; 
+}
+
+#sidebar a{
+    color: #d8d8d8;
+    display: block;
+    padding: 12px;
+    padding-left: 16px;
+    margin-left: -0.9pc;
+    width: 9pc;
+   
+}
+
+#sidebar a:hover{
+    background-color: #00bab3;
+    text-decoration: none !important;
+}
+
+#sidebar ul{
+    padding: 0px;
+    margin-top: 2pc;
+}
+
+/*  Nav -------------- */
+#colorful-nav ul>li:hover {
+    padding-top: 0;
+}
+
+#colorful-nav h2{
+    margin-top: 0.5pc;
+}
+
+#colorful-nav a{
+    width:8pc;
+    margin-top: -0.3pc;
+}
+
+#colorful-nav h5{
+    padding: 9px;
+}
+
+
+#colorful-nav h5:hover{
+    background-color: #b70000;
+     transition: all 0.2s linear;
+}
+
+#colorful-nav ul>li {
+    float:left;
+    text-align: center;
+    width: 8%;
+    
+}
+
+
+/* nav end ------- */
+
+
+.grid a:hover{
+    text-decoration: none;
+    padding: 0 !important;
+}
+
+
+.grid li{
+    margin-top: -5pc;
+    width: 19pc;
+    margin-bottom: 6pc !important;
+}
+.grid li:hover{
+padding: 7px !important;
+}
+
+
+
+#sidebar-btn {  
+     display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+    width: 34px;
+    margin-top: -1pc;
+    margin-left: 8.8pc;
+    height: 40px;
+     cursor:pointer;
+}
+
+#sidebar li span{
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 16px;
+    margin-top: -0.4pc;
+    margin-right: -3.8pc;
+     font-size: 17px;
+    float: right;
+}
+
+#sidebar-btn span{
+    height: 2px;
+    background-color: #d6d6d6;
+    margin-bottom: 7px;
+    display: block;
+    
+}
+
+#sidebar-btn span:hover{
+    width:100%;
+}
+
+#sidebar-btn span:nth-child(2){
+    width: 75%;
+}
+
+#sidebar-btn span:nth-child(3){
+    width: 50%;
+}
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  margin-top: 0.6pc;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #525252;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+/*  On smaller Screen */
+
+@media screen and (max-width: 1000px)
+{
+    #sidebar{
+          margin-top: -6pc;
+    }
+  .grid li{
+      width: 25pc!important; 
+    }
+ 
+
+}
+
+@media screen and (max-width: 900px){
+    .grid li{
+      width: 95% !important; 
+    }
+   
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    #colorful-nav h2{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+     #colorful-nav h5{
+        font-size: 12px !important;
+        margin-top: -0.1pc;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    #colorful-nav ul>li {
+        text-align: left;
+        height:60px;
+        width: 100%;
+    }
+  
+
+    #colorful-nav ul>li:hover{
+        padding: 2px;
+    }
+}
+
